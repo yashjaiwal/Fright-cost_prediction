@@ -8,8 +8,8 @@ import joblib
 
 @st.cache_resource
 def load_models():
-    freight_model = joblib.load("C:/Users/User/Desktop/ML project/model/best_freight_model.pkl")
-    flag_model = joblib.load("C:/Users/User/Desktop/ML project/model/predict_flag_invoice.pkl")
+    freight_model = joblib.load("model/best_freight_model.pkl")
+    flag_model = joblib.load("model/predict_flag_invoice.pkl")
     return freight_model, flag_model
 
 freight_model, flag_model = load_models()
